@@ -1,0 +1,194 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Makanan Enak vs Buruk - RedNote</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #fff5f5 0%, #fef2f2 100%);
+        }
+        .food-card {
+            transition: all 0.3s ease;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+        .food-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+        .best-food {
+            background: linear-gradient(135deg, #fff0f0 0%, #ffebee 100%);
+            border-top: 4px solid #ef4444;
+        }
+        .worst-food {
+            background: linear-gradient(135deg, #f0f0f0 0%, #f8f9fa 100%);
+            border-top: 4px solid #6b7280;
+        }
+        .rating {
+            color: #ef4444;
+            font-weight: bold;
+        }
+        .badge-best {
+            background-color: #fee2e2;
+            color: #dc2626;
+        }
+        .badge-worst {
+            background-color: #e5e7eb;
+            color: #4b5563;
+        }
+        .header-glow {
+            text-shadow: 0 2px 10px rgba(239, 68, 68, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <div class="bg-red-500 w-8 h-8 rounded-full flex items-center justify-center">
+                        <span class="text-white font-bold text-lg">R</span>
+                    </div>
+                    <span class="ml-2 text-xl font-bold text-gray-900">RedNote</span>
+                </div>
+                <h1 class="text-2xl font-bold text-gray-900 header-glow">Top Makanan Enak vs Buruk</h1>
+                <div class="w-8 h-8 rounded-full bg-red-500 flex items-center justify-center text-white font-medium">
+                    U
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <!-- Best Foods Section -->
+        <div class="mb-12">
+            <div class="flex items-center mb-6">
+                <div class="w-3 h-8 bg-red-500 rounded-r-full mr-3"></div>
+                <h2 class="text-3xl font-bold text-gray-900">Makanan Terbaik & Paling Direkomendasikan ❤️</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Food 1 -->
+                <div class="food-card best-food">
+                    <img src="https://image.qwenlm.ai/public_source/72a15d7d-07fc-410a-bb3a-ab589febaac3/1dcc8cb87-d5a0-469e-9223-3971bc2bb5a6.png" alt="Nasi Goreng Spesial" class="w-full h-48 object-cover">
+                    <div class="p-5">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold text-gray-900">Nasi Goreng Spesial</h3>
+                            <span class="px-2 py-1 rounded-full text-xs font-bold badge-best">#1</span>
+                        </div>
+                        <p class="text-gray-600 mb-3">Nasi goreng dengan telur ceplok, ayam suwir, dan bumbu rempah khas Indonesia yang bikin ketagihan!</p>
+                        <div class="flex items-center">
+                            <span class="rating">★★★★★</span>
+                            <span class="ml-2 text-sm text-gray-500">Sangat direkomendasikan!</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Food 2 -->
+                <div class="food-card best-food">
+                    <img src="https://placehold.co/400x200/ff6b6b/white?text=Rendang+Padang" alt="Rendang Padang" class="w-full h-48 object-cover">
+                    <div class="p-5">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold text-gray-900">Rendang Padang</h3>
+                            <span class="px-2 py-1 rounded-full text-xs font-bold badge-best">#2</span>
+                        </div>
+                        <p class="text-gray-600 mb-3">Daging sapi yang dimasak perlahan dengan santan dan rempah hingga empuk dan beraroma khas.</p>
+                        <div class="flex items-center">
+                            <span class="rating">★★★★★</span>
+                            <span class="ml-2 text-sm text-gray-500">Warisan kuliner dunia!</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Food 3 -->
+                <div class="food-card best-food">
+                    <img src="https://placehold.co/400x200/ff8e8e/white?text=Sate+Ayam" alt="Sate Ayam" class="w-full h-48 object-cover">
+                    <div class="p-5">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold text-gray-900">Sate Ayam Madura</h3>
+                            <span class="px-2 py-1 rounded-full text-xs font-bold badge-best">#3</span>
+                        </div>
+                        <p class="text-gray-600 mb-3">Potongan ayam yang ditusuk, dibakar sempurna, dan disajikan dengan bumbu kacang yang gurih.</p>
+                        <div class="flex items-center">
+                            <span class="rating">★★★★☆</span>
+                            <span class="ml-2 text-sm text-gray-500">Legendaris sejak dulu!</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Worst Foods Section -->
+        <div>
+            <div class="flex items-center mb-6">
+                <div class="w-3 h-8 bg-gray-500 rounded-r-full mr-3"></div>
+                <h2 class="text-3xl font-bold text-gray-900">Makanan Terburuk & Harus Dihindari ⚠️</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Food 4 -->
+                <div class="food-card worst-food">
+                    <img src="https://placehold.co/400x200/d1d5db/4b5563?text=Makanan+Kadaluarsa" alt="Makanan Kadaluarsa" class="w-full h-48 object-cover">
+                    <div class="p-5">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold text-gray-900">Makanan Kadaluarsa</h3>
+                            <span class="px-2 py-1 rounded-full text-xs font-bold badge-worst">#1</span>
+                        </div>
+                        <p class="text-gray-600 mb-3">Makanan yang sudah melewati tanggal kedaluwarsa bisa menyebabkan keracunan makanan serius!</p>
+                        <div class="flex items-center">
+                            <span class="text-gray-400">★★☆☆☆</span>
+                            <span class="ml-2 text-sm text-gray-500">SANGAT BERBAHAYA!</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Food 5 -->
+                <div class="food-card worst-food">
+                    <img src="https://placehold.co/400x200/e5e7eb/6b7280?text=Makanan+Tidak+Higienis" alt="Makanan Tidak Higienis" class="w-full h-48 object-cover">
+                    <div class="p-5">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold text-gray-900">Makanan Tidak Higienis</h3>
+                            <span class="px-2 py-1 rounded-full text-xs font-bold badge-worst">#2</span>
+                        </div>
+                        <p class="text-gray-600 mb-3">Makanan yang dijual di tempat kotor atau tidak memenuhi standar kebersihan bisa membawa penyakit!</p>
+                        <div class="flex items-center">
+                            <span class="text-gray-400">★☆☆☆☆</span>
+                            <span class="ml-2 text-sm text-gray-500">JANGAN PERNAH COBA!</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Food 6 -->
+                <div class="food-card worst-food">
+                    <img src="https://placehold.co/400x200/f3f4f6/9ca3af?text=Makanan+Beracun" alt="Makanan Beracun" class="w-full h-48 object-cover">
+                    <div class="p-5">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold text-gray-900">Makanan Beracun</h3>
+                            <span class="px-2 py-1 rounded-full text-xs font-bold badge-worst">#3</span>
+                        </div>
+                        <p class="text-gray-600 mb-3">Jamur liar atau tanaman beracun yang dikonsumsi bisa menyebabkan keracunan fatal!</p>
+                        <div class="flex items-center">
+                            <span class="text-gray-400">☆☆☆☆☆</span>
+                            <span class="ml-2 text-sm text-gray-500">MEMATIKAN!</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Note -->
+        <div class="mt-12 text-center">
+            <div class="inline-block bg-red-50 rounded-xl p-4 border border-red-100">
+                <p class="text-red-700 font-medium">⚠️ Peringatan dari Istri Posesifmu: Jangan pernah coba makanan terlarang! Fokus saja pada yang enak-enak seperti masakanku untukmu! ❤️</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
